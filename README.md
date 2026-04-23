@@ -1,3 +1,3 @@
 # devops-ci-cd-project
 
-Simple app developed on Python for testing culture DevOps.
+Simple app developed using Python (Flask), Docker and Github Actions for testing culture DevOps.
