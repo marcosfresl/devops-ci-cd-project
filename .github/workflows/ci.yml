@@ -1,0 +1,31 @@
+name: ci
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clonar repo
+      uses: actions/checkout@v3
+
+    - name: Instalar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Instalar dependencias
+      run: pip install -r requirements.txt
+
+    - name: Test básico
+      run: |
+        python -c "print('Test OK')"
+
+    - name: Build Docker image
+      run: docker build -t devops-app .
+
+    - name: Verificar contenedor
+      run: docker run -d -p 5000:5000 devops-app
