@@ -1,3 +1,3 @@
 # devops-ci-cd-project
 
-Simple app on Python to testing culture DevOps.
+Simple app developed on Python for testing culture DevOps.
