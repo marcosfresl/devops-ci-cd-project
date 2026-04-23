@@ -20,8 +20,7 @@ El objetivo es automatizar el ciclo de vida de una aplicación desde el código 
 
 1. Developer hace push a GitHub  
 2. GitHub Actions ejecuta pipeline:
-   - Build de imagen Docker  
-   - Deploy automático en EC2 vía SSH  
+   - Build de imagen Docker
 3. La aplicación queda corriendo en producción  
 
 ---
@@ -31,8 +30,7 @@ El objetivo es automatizar el ciclo de vida de una aplicación desde el código 
 El pipeline incluye:
 
 - Build automático de la aplicación  
-- Creación de imagen Docker  
-- Despliegue automático en servidor EC2  
+- Creación de imagen Docker. 
 
 ---
 
@@ -48,7 +46,6 @@ La aplicación está containerizada para asegurar:
 
 ## ☁️ Infraestructura
 - Security Groups configurados
-- Acceso SSH para despliegue automatizado
 
 ---
 
