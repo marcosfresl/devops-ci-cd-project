@@ -27,5 +27,8 @@ jobs:
     - name: Build Docker image
       run: docker build -t devops-app .
 
-    - name: Verificar contenedor
-      run: docker run -d -p 5000:5000 devops-app
+    - name: Run container test
+      run: |
+        docker run -d -p 5000:5000 --name test-container devops-app
+        sleep 5
+        curl http://localhost:5000
