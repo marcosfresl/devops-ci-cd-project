@@ -1,7 +1,7 @@
-# DevOps CI/CD Project – Docker + AWS + GitHub Actions
+# DevOps CI/CD Project – Docker + GitHub Actions
 
 ## 📌 Descripción
-Este proyecto demuestra la implementación de un pipeline CI/CD completo utilizando GitHub Actions, Docker y despliegue en AWS EC2.
+Este proyecto demuestra la implementación de un pipeline CI/CD completo utilizando GitHub Actions y Docker.
 
 El objetivo es automatizar el ciclo de vida de una aplicación desde el código hasta producción.
 
